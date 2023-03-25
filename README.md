@@ -3,7 +3,7 @@
 cBot is an autonomous robot system developed for teaching at universities. The goal is to promote programming in C language with exciting applications in the field of autonomous robots using professional development tools. 
 
 cBot has a rich set of equipment that allows a wide range of experiments:
-- 32 bit microprocessor with 72 MHz for the execution of more complex algorithms.
+- 32 bit microprocessor with 72 MHz for the execution of more complex algorithms
 - Two stepper motors for precise driving maneuvers with simple kinematics
 - Three adjustable ultrasonic sensors for detecting objects
 - Two light sensors to following lines
@@ -24,13 +24,14 @@ The following steps are required to assemble the robot:
 
 ## Start Programming with cBot
 
-cBot is programmed with the programming environment STM32CubeIDE. The programming environment can be downloaded and used free of charge from the manufacturer ST after registration. The project files have been created with STM32CubeIDE version 1.11.0. However, with only little effort the project can also be imported into older versions. 
+cBot is programmed with the programming environment STM32CubeIDE. The programming environment can be downloaded and used free of charge from the manufacturer ST after registration. The project files have been created with STM32CubeIDE version 1.11.0. However, with only little effort the project can also be imported into older versions.
 
-To run the first program on cBot the following things have to be done:
-- Download and install STM32CubeIDE: https://www.st.com/en/development-tools/stm32cubeide.html
+Download STM32CubeIDE from <https://www.st.com/en/development-tools/stm32cubeide.html>. Just follow the instructions, while installing the IDE.
+
+A [video tutorial](https://www.youtube.com/watch?v=gb_FOSKnrtg) explains the next steps to run the first application on cBot:
 - Clone this repository onto your computer. Alternatively it can be downloaded as a ZIP file and unpacked.
-- Import the project as existing projekt into the workspace of STM32CubeIDE. Make sure to not copy the project into the workspace. 
-- Compile the project (by pressing the button with the hammer)
+- Import the project as existing projekt into the workspace of STM32CubeIDE. Make sure to not copy the project into the workspace.
+- Compile the project
 - Connect the debugger with your computer and cBot
 - Connect the powerbank to cBot
-- Flash the software onto cBot (by pressing ...)
+- Flash the software onto cBot
