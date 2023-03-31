@@ -32,7 +32,7 @@
 #include <stdlib.h>
 
 
-#define ACTIVATION_RANGE 10
+#define ACTIVATION_RANGE 100
 
 void init() {
 	// init display
@@ -62,8 +62,8 @@ void loop() {
 	}
 
 	// start disco, if button is pressed or object is detected closer than ...
-	else if ( !isPlaying() && ( isPressed(BUTTON_RIGHT) || (getRangeCm(SENSOR_LEFT) <= ACTIVATION_RANGE) ||
-			(getRangeCm(SENSOR_MIDDLE) <= ACTIVATION_RANGE) || (getRangeCm(SENSOR_RIGHT) <= ACTIVATION_RANGE) ) ) {
+	else if ( !isPlaying() && ( isPressed(BUTTON_RIGHT) || (getRangeMm(SENSOR_LEFT) <= ACTIVATION_RANGE) ||
+			(getRangeMm(SENSOR_MIDDLE) <= ACTIVATION_RANGE) || (getRangeMm(SENSOR_RIGHT) <= ACTIVATION_RANGE) ) ) {
 		playMario();
 		while ( isPressed(BUTTON_RIGHT) );	// wait until key is released
 	}
